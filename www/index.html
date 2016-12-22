@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="./css/index.css" type="text/css" rel="stylesheet">
+    <title>test</title>
+</head>
+<body class="body-container">
+
+
+    <div class="main-container">
+        <h1 class="fb-glitch" data-text="주사 ( 폭파">
+            주사 ( 폭파
+        </h1>
+
+
+        <div class="from-group">
+            <input type="text" id="ipaddress" placeholder="Please input an IP address or a uri"/>
+
+            <button id="begin">BEGIN</button>
+
+        </div>
+
+        <div class="config-div">
+
+            <div class="select-div">
+
+                <button id="type1" class="select-option selected-option">端口扫描</button>
+                <button id="type2" class="select-option">目录爆破</button>
+
+            </div>
+            <div class="more-option-div">
+
+                <div class="more-option-div1  " id="type1-more">
+                    <span id="select_quick_port" title="the frequently-used ports contains 21, 22, 23, 25, 26, 69, 80, 110, 143,443, 465, 995, 1080, 1158, 1433, 1521, 2100, 3128, 3306, 3389,7001, 8080, 8081, 9080, 9090,43958,50000">select frequently-used ports</span>=
+                    <span id="select_all_port">select all ports</span>
+                    <span>or</span>
+                    <input type="text" id="begin_input" />
+                    <span>to</span>
+                    <input type="text" id="end_input"/>
+                </div>
+
+                <div class="more-option-div2 not-display " id="type2-more" >
+                    <select id="select-file">
+                        <option value="0">directory-list-lowercase-2.3-small.txt</option>
+                        <option value="1">directory-list-2.3-small.txt</option>
+                        <option value="2">directory-list-lowercase-2.3-medium.txt</option>
+                        <option value="3">directory-list-2.3-medium.txt</option>
+                        <option value="4">directory-list-lowercase-2.3-big.txt</option>
+                        <option value="5">directory-list-2.3-big.txt</option>
+                    </select>s
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="result-div" id="result-div">
+            <div id="process-control">
+                <div class="expand" id="processExpand"></div>
+            </div>
+            <p>result:</p>
+        </div>
+
+
+
+    </div>
+    <p id="copyright">Copyright@2016 Xiaotao Nie,All right reserved,Email:net@zju.edu.cn</p>
+</body>
+
+<script src="js/index.js"></script>
+
+</html>
